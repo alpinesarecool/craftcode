@@ -16,7 +16,7 @@ function normalize(str: string): string {
 }
 
 function getReversed(str: string): string {
-  return Array.from(str).reverse().join('');
+  return [...str].reverse().join('');
 }
 
 /*
@@ -39,4 +39,9 @@ ISO 10646 -> Unicode
 https://home.unicode.org/
 utf-8, 16, 32
 */
+
+// "Hello".split("") -> Splits at every UTF-8
+// [..."Hello"] -> works with unicode points works with emojis
+// UTF-8 by default GO.
+// JAVA, JS it is UTF-16
 
