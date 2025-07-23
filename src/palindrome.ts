@@ -11,8 +11,8 @@ export function isPalindrome(input?: string): boolean {
 }
 
 function normalize(str: string): string {
-  const SPECIAL_CHARACTER_REGEX = /[\p{P}\p{White_Space}]+/gu;
-  return str.toLowerCase().replace(SPECIAL_CHARACTER_REGEX, '');
+  const PUNCTUATION_SPACE_REGEX = /[\p{P}\p{White_Space}]+/gu;
+  return str.toLowerCase().replace(PUNCTUATION_SPACE_REGEX, '');
 }
 
 function getReversed(str: string): string {
