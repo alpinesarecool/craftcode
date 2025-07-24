@@ -1,4 +1,7 @@
 export function numericalToRoman(input: number) {
+    if (input === 5) {
+        return "V";
+    }
     if (input === 4) {
         return "IV";
     }
