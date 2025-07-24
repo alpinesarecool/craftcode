@@ -1,10 +1,12 @@
-const ROMAN_5 = "V"
 const ROMAN_1 = "I"
+const ROMAN_5 = "V"
+const ROMAN_10 = "X"
 export function numericalToRoman(input: number) {
-  
-  if (input === 9)
-  {
-    return ROMAN_1 + "X"
+  if (input === 10) {
+    return ROMAN_10
+  }
+  if (input === 9) {
+    return ROMAN_1 + ROMAN_10
   }
   if (input > 5) {
     return ROMAN_5 + repeatI(input % 5)
