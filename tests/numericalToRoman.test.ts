@@ -30,7 +30,7 @@ describe("numericalToRoman", () => {
     expect(numericalToRoman(6)).toBe("VI");
   })
 
-    it("should return VII for 7", () => {
+  it("should return VII for 7", () => {
     expect(numericalToRoman(7)).toBe("VII");
   })
 })
