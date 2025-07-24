@@ -1,6 +1,6 @@
 export function numericalToRoman(input: number) {
   if (input>5){
-    return "V"+ "I".repeat(input%5)
+    return "V"+ repeatI(input%5)
   }
   if (input === 5) {
     return "V";
@@ -9,7 +9,11 @@ export function numericalToRoman(input: number) {
     return "IV";
   }
   if (input > 0) {
-    return "I".repeat(input);
+    return repeatI(input);
   }
   return ""
+}
+
+function repeatI(input: number) {
+  return "I".repeat(input);
 }
