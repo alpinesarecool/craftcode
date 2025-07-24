@@ -41,4 +41,8 @@ describe("numericalToRoman", () => {
   it("should return IX for 9", () => {
     expect(numericalToRoman(9)).toBe("IX");
   })
+
+  it("should return X for 10", () => {
+    expect(numericalToRoman(10)).toBe("X");
+  })
 })
