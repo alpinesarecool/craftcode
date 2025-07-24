@@ -1,3 +1,4 @@
+const ROMAN_0 = ""
 const ROMAN_1 = "I"
 const ROMAN_5 = "V"
 const ROMAN_10 = "X"
@@ -18,9 +19,9 @@ export function numericalToRoman(input: number) {
     return ROMAN_1 + ROMAN_5;
   }
   if (input > 0) {
-    return repeatI(input);
+    return ROMAN_0 + repeatI(input);
   }
-  return ""
+  return ROMAN_0
 }
 
 function repeatI(input: number) {
