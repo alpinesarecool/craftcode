@@ -22,7 +22,11 @@ describe("numericalToRoman", () => {
     expect(numericalToRoman(4)).toBe("IV");
   })
 
-  it("should return V for 5", ()=> {
+  it("should return V for 5", () => {
     expect(numericalToRoman(5)).toBe("V");
+  })
+
+  it("should return VI for 6", () => {
+    expect(numericalToRoman(6)).toBe("VI");
   })
 })
