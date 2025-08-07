@@ -1,7 +1,6 @@
 export function romanNumerals(input: number) {
   if (input === 0) return ""
-  if (input === 2) return "II"
-
+  if (input > 3999) throw new RangeError("Input must be 3999 or less");
   const symbols = [
     { value: 1000, symbol: "M" },
     { value: 900, symbol: "CM" },
@@ -18,6 +17,7 @@ export function romanNumerals(input: number) {
     { value: 1, symbol: "I" }
   ]
   let result: string = ""
+  
   for (const { value, symbol } of symbols) {
     while (input >= value) {
       result = result + symbol

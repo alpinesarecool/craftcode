@@ -112,4 +112,8 @@ describe("romanNumerals", () => {
   it("returns XXV when the number is 25", () => {
     expect(romanNumerals(25)).toBe("XXV")
   })
+  it("throws an exception when the number is greater than 3999", () => {
+    expect(() => romanNumerals(4000)).toThrow(RangeError)
+    expect(() => romanNumerals(4000)).toThrow("Input must be 3999 or less")
+  })
 })
