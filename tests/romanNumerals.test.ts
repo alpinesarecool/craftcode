@@ -49,10 +49,64 @@ describe("romanNumerals", () => {
   it("returns XIV when the number is 14", () => {
     expect(romanNumerals(14)).toBe("XIV")
   })
-    it("returns XXII when the number is 22", () => {
+  it("returns XIX when the number is 19", () => {
+    expect(romanNumerals(19)).toBe("XIX")
+  })
+  it("returns XXII when the number is 22", () => {
     expect(romanNumerals(22)).toBe("XXII")
   })
-      it("returns XXVII when the number is 27", () => {
+  it("returns XXVII when the number is 27", () => {
     expect(romanNumerals(27)).toBe("XXVII")
+  })
+  it("returns XXIX when the number is 39", () => {
+    expect(romanNumerals(39)).toBe("XXXIX")
+  })
+  it("returns XL when the number is 40", () => {
+    expect(romanNumerals(40)).toBe("XL")
+  })
+  it("returns XLI when the number is 41", () => {
+    expect(romanNumerals(41)).toBe("XLI")
+  })
+  it("returns XLIX when the number is 49", () => {
+    expect(romanNumerals(49)).toBe("XLIX")
+  })
+  it("returns LI when the number is 51", () => {
+    expect(romanNumerals(51)).toBe("LI")
+  })
+  it("returns LXXVII when the number is 77", () => {
+    expect(romanNumerals(77)).toBe("LXXVII")
+  })
+  it("returns XCI when the number is 91", () => {
+    expect(romanNumerals(91)).toBe("XCI")
+  })
+  it("returns CI when the number is 101", () => {
+    expect(romanNumerals(101)).toBe("CI")
+  })
+  it("returns CCCXCIX when the number is 399", () => {
+    expect(romanNumerals(399)).toBe("CCCXCIX")
+  })
+  it("returns CDII when the number is 402", () => {
+    expect(romanNumerals(402)).toBe("CDII")
+  })
+  it("returns CDXCIX when the number is 499", () => {
+    expect(romanNumerals(499)).toBe("CDXCIX")
+  })
+  it("returns DI when the number is 501", () => {
+    expect(romanNumerals(501)).toBe("DI")
+  })
+  it("returns DCCLXXXVII when the number is 787", () => {
+    expect(romanNumerals(787)).toBe("DCCLXXXVII")
+  })
+  it("returns CMI when the number is 901", () => {
+    expect(romanNumerals(901)).toBe("CMI")
+  })
+  it("returns CMXCIX when the number is 999", () => {
+    expect(romanNumerals(999)).toBe("CMXCIX")
+  })
+  it("returns MI when the number is 1001", () => {
+    expect(romanNumerals(1001)).toBe("MI")
+  })
+  it("returns MMMCMXCIX when the number is 3999", () => {
+    expect(romanNumerals(3999)).toBe("MMMCMXCIX")
   })
 })
