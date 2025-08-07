@@ -109,4 +109,7 @@ describe("romanNumerals", () => {
   it("returns MMMCMXCIX when the number is 3999", () => {
     expect(romanNumerals(3999)).toBe("MMMCMXCIX")
   })
+  it("returns XXV when the number is 25", () => {
+    expect(romanNumerals(25)).toBe("XXV")
+  })
 })
